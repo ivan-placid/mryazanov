@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li><a class="{% if page.url == '/' %}currentPage{% endif %}" href="{{site.baseurl}}/index.html">Главная</a></li>
+        <li><a class="{% if page.url == '/vacancies.html' %}currentPage{% endif %}" href="{{site.baseurl}}/vacancies.html">Вакансии</a></li>
+        <li><a class="{% if page.url == '/contacts.html' %}currentPage{% endif %}" href="{{site.baseurl}}/contacts.html">Контакты</a></li>
+    </ul>
+</nav>
