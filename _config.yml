@@ -1,2 +1,3 @@
-baseurl: 
+future: true 
 exclude: ['README.md']
+permalink: /vacancies/:title
