@@ -1,12 +1,12 @@
 <nav>
     <ul>
-        <li><a class="{% if page.url == '/' %}currentPage{% endif %}" href="/">Главная</a></li>
-        <li><a class="{% if page.url == '/vacancies.html' %}currentPage{% endif %}" href="/vacancies.html">Вакансии</a></li>
-        <li><a class="{% if page.url == '/contacts.html' %}currentPage{% endif %}" href="/contacts.html">Контакты</a></li>
+        <li><a class="{% if page.url == '/' %}currentPage{% endif %}" href="{{ site.baseurl }}/">Главная</a></li>
+        <li><a class="{% if page.url == '/vacancies.html' %}currentPage{% endif %}" href="{{ site.baseurl }}/vacancies.html">Вакансии</a></li>
+        <li><a class="{% if page.url == '/contacts.html' %}currentPage{% endif %}" href="{{ site.baseurl }}/contacts.html">Контакты</a></li>
     </ul>
 
     <ul>
-        <li><a href="/">Рус</a></li>
-        <li><a href="/eng/">Eng</a></li>
+        <li><a href="{{ site.baseurl }}/">Рус</a></li>
+        <li><a href="{{ site.baseurl }}/eng/">Eng</a></li>
     </ul>
 </nav>
