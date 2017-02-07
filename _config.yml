@@ -1,3 +1,4 @@
 future: true 
 exclude: ['README.md']
-permalink: /vacancies/:title
+permalink: :categories/:title
+languages: ['ru', 'en']
