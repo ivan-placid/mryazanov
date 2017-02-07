@@ -1,4 +1,4 @@
 future: true 
 exclude: ['README.md']
 permalink: :categories/:title
-languages: ['ru', 'en']
+baseurl: /mryazanov
