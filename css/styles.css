@@ -2,3 +2,12 @@
     text-decoration: none;
     color: black;
 }
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 5rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
