@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Секретарь подразделения/Персональный ассистент
-category: vacancy
+category: vacancies
 published: true
 ---
 # Секретарь подразделения / Персональный ассистент 
