@@ -1,3 +1,4 @@
+title: [EN]:   https://github.com/jekyll/jekyll
 future: true 
 exclude: ['README.md']
 permalink: :categories/:title
