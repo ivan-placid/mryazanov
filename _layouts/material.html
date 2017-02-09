@@ -3,15 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>Максим Рязанов - Частный рекрутер</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-	<!-- Canonical SEO -->
-	<link rel="canonical" href="https://www.creative-tim.com/product/material-kit"/>
 	
 	<!--     Fonts and icons     -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -19,8 +17,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
 	<!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/material-kit.css" rel="stylesheet"/>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="{{ site.baseurl }}/css/material-kit.css" rel="stylesheet"/>
 
 </head>
 
@@ -35,34 +33,39 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="http://www.creative-tim.com">Creative Tim</a>
+        		<a class="navbar-brand" href="{{ site.baseurl }}">Максим Рязанов</a>
         	</div>
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
 					<li>
-    					<a href="../components-documentation.html" target="_blank">
-    						Components
+    					<a href="{{ site.baseurl }}/">
+    						Работодателям
+    					</a>
+    				</li>
+					<li>
+    					<a href="{{ site.baseurl }}/agencies/">
+    						Агентствам
+    					</a>
+    				</li>
+                    <li>
+    					<a href="{{ site.baseurl }}/vacancies/">
+    						Вакансии
     					</a>
     				</li>
     				<li>
-						<a href="http://www.creative-tim.com/product/material-kit" target="_blank">
-							<i class="material-icons">cloud_download</i> Download
+						<a href="{{ site.baseurl }}/contacts/">
+						    Контакты
 						</a>
     				</li>
 		            <li>
-		                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-twitter"></i>
+		                <a href="https://linkedin.com/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+							<i class="fa fa-linkedin"></i>
 						</a>
 		            </li>
 		            <li>
-		                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+		                <a href="https://www.facebook.com/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
 							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
 						</a>
 		            </li>
         		</ul>
@@ -71,7 +74,7 @@
     </nav>
 
     <div class="wrapper">
-		<div class="header header-filter" style="background-image: url('../assets/img/examples/city.jpg');"></div>
+		<div class="header header-filter" style="background-image: url('{{ site.baseurl }}/img/city.jpg');"></div>
 
 		<div class="main main-raised">
 			<div class="profile-content">
@@ -79,87 +82,145 @@
 	                <div class="row">
 	                    <div class="profile">
 	                        <div class="avatar">
-	                            <img src="../assets/img/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
+	                            <img src="{{ site.baseurl }}/img/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
 	                        </div>
 	                        <div class="name">
-	                            <h3 class="title">Christian Louboutin</h3>
-								<h6>Designer</h6>
+	                            <h3 class="title">Максим Рязанов</h3>
+								<h6>Частный рекрутер</h6>
 	                        </div>
 	                    </div>
 	                </div>
 	                <div class="description text-center">
-                        <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+                        <p>Подбор специалистов среднего и высшего звена в сжатые сроки с гарантией. </p>
 	                </div>
 
 					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
+						<div class="col-md-8 col-md-offset-2">
 							<div class="profile-tabs">
-			                    <div class="nav-align-center">
-									<ul class="nav nav-pills" role="tablist">
-										<li class="active">
-											<a href="#studio" role="tab" data-toggle="tab">
-												<i class="material-icons">camera</i>
-												Studio
-											</a>
-										</li>
-										<li>
-				                            <a href="#work" role="tab" data-toggle="tab">
-												<i class="material-icons">palette</i>
-												Work
-				                            </a>
-				                        </li>
-				                        <li>
-				                            <a href="#shows" role="tab" data-toggle="tab">
-												<i class="material-icons">favorite</i>
-				                                Favorite
-				                            </a>
-				                        </li>
-				                    </ul>
+			                    <div class="nav-align-left">
+<h2>Услуги</h2>
+<ul>
+    <li>Подбор юристов</li>
+    <li>Подбор финансовых специалистов</li>
+    <li>Подбор специалистов по маркетингу и продажам</li>
+    <li>Подбор специалистов по продвижению бизнеса</li>
+    <li>Подбор директоров</li>
+</ul>
 
-				                    <div class="tab-content gallery">
-										<div class="tab-pane active" id="studio">
-				                            <div class="row">
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris1.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris0.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris3.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris4.jpg" class="img-rounded" />
-												</div>
-				                            </div>
-				                        </div>
-				                        <div class="tab-pane text-center" id="work">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris5.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris7.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris6.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris8.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
-										<div class="tab-pane text-center" id="shows">
-											<div class="row">
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris4.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris6.jpg" class="img-rounded" />
-												</div>
-												<div class="col-md-6">
-													<img src="../assets/img/examples/chris7.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris5.jpg" class="img-rounded" />
-													<img src="../assets/img/examples/chris9.jpg" class="img-rounded" />
-												</div>
-											</div>
-				                        </div>
 
-				                    </div>
+<h2>Факты и цифры</h2>
+<p>За время моей работы в качестве специалиста по подбору персонала мною были закрыты следующие позиции:</p>
+
+<h3>ЮРИСТЫ</h3>
+<ul>
+    <li>От младшего юриста до Директора юридического департамента для многопрофильного холдинга</li>
+    <li>Руководитель юридического департамента для инвестиционного фонда</li>
+    <li>Руководитель юридического департамента по работе с личными активами главного акционера крупного международного концерна</li>
+    <li>Руководитель юридического департамента крупной нефтеперерабатывающей компании</li>
+    <li>От младшего юриста до партнера для российских и международных юридических фирм со специализацией в различных областях права</li>
+</ul>
+
+<h3>ФИНАНСИСТЫ</h3>
+<ul>
+    <li>Финансовый директор (4 позиции) для многопрофильного холдинга</li>
+    <li>Заместитель Председателя правления коммерческого банка</li>
+    <li>Финансовый аналитик по работе с личными активами главного акционера крупного международного концерна.</li>
+    <li>Главный бухгалтер производство</li>
+    <li>Младшие бухгалтеры и помощники бухгалтера в большом количестве</li>
+</ul>
+    
+<h3>МАРКЕТИНГ, ПРОДАЖИ, ПРОДВИЖЕНИЕ БИЗНЕСА</h3>
+<ul>
+    <li>Директор российского представительства фирмы – производителя сувенирной продукции и маркетинговых решений</li>
+    <li>Директор по развитию бизнеса и внедрению новых продуктов для производственного предприятия</li>
+</ul>
+
+
+<h2>Гарантии</h2>
+<p>На подобранных мной кандидатов я предоставляю гарантию.</p>
+<p>Если в течение гарантийного срока кандидат по каким-то причинам решает покинуть работодателя, я обязуюсь произвести бесплатную замену данного кандидата.</p>
+
+
+<h2>Hands off</h2>
+<p>При работе со мной Вы можете быть уверены в сохранности своих кадров.</p>
+<p>Я не рассматриваю Ваших специалистов при работе над проектами других клиентов в течение 1 года.</p>
+
+
+<h2>Конфиденциальность</h2>
+<p>При работе над вакансией я не озвучиваю имя работодателя до одобренного Вами момента.</p>
+<p>В случае публикации вакансий в открытых источниках я НИКОГДА не указываю название компании – работодателя.</p>
+
+
+<h2>Стоимость услуг</h2>
+<p>Стоимость услуг по подбору специалистов зависит от профиля должности и количества вакансий. Пользуясь моими услугами, вы получаете сервис с уровнем работы лучших кадровых агентств по более низкой цене.</p>
+
+
+<h2>Сроки/скорость</h2>
+<p>Я всегда стараюсь максимально быстро предоставить заказчику необходимый пул подходящих кандидатов.</p>
+<p>Во-первых, при получении обратной связи от работодателя очень часто выявляются дополнительные требования и пожелания к кандидатам, что позволяет мне разработать более точную воронку поиска.</p>
+<p>Во-вторых, вы, как клиент, видите, что работа идет и всегда можете внести свои коррективы.</p>
+
+
+<h2>Работа на результат</h2>
+<p>Вы оплачиваете мои услуги ТОЛЬКО в случае успешного закрытия мной вакансии.</p>
+<p>Никаких предоплат, оплата только за результат!</p>
+
+<h2>Удобство сотрудничества</h2>
+<p>Я работаю в статусе Индивидуального предпринимателя, что позволяет Вам работать со мной по договору и оплачивать мои услуги по безналичному расчету.</p>
+
+
+<h2>Инструменты</h2>
+<p>В своей работе я использую все возможные инструменты:</p>
+<ul>
+    <li>Собственная база кандидатов</li>
+    <li>Рекомендации</li>
+    <li>Linkedin (более 2000 контактов)</li>
+    <li>Платные базы кандидатов</li>
+    <li>Социальные сети</li>
+</ul>
+
+
+<h2>Плюсы сотрудничества</h2>
+    <p>Для владельцев и управляющих бизнесом я могу заменить наличие рекрутера внутри структуры компании, что позволит вам значительно сократить расходы.</p>
+    <p>Для руководителей отделов персонала я – необходимость, так как:</p>
+    <ul>
+        <li>Провожу первичный отбор кандидатов с проведением интервью</li>
+        <li>Предоставляю кандидатов, максимально подходящих под заявленные требования</li>
+    </ul>
+
+
+
+<h2>География</h2>
+<p>В своей работе я не ограничиваюсь подбором специалистов только в Москве.</p>
+<p>Я успешно работаю с вакансиями различного уровня в других городах России, странах СНГ и за рубежом.</p>
+
+
+<h2>Что выбрать: кадровое агентство или независимого хедхантера?</h2>
+<p>Выбирая агентство по подбору персонала, Вы оплачиваете их красивый офис, платите зарплату их административному персоналу и, собственно, УСЛУГУ по подбору.</p>
+<p>Выбирая работу с независимым хедхантером, Вы работаете с конкретным человеком, который заинтересован выполнять взятые на себя обязательства в максимально сжатые сроки, при этом который заботится о собственной репутации, так как имя не поменяешь в отличие от названия агентства.</p>
+
+
+<b>Оставить заявку на сотрудничество</b>
+<div class="col-sm-4">
+	<div class="form-group">
+        <form action="https://getsimpleform.com/messages?form_api_token=a48ffb4761dbcf0e703960e39986d600" method="post">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <input type='hidden' name='redirect_to' value='https://calledandrey.github.io/mryazanov/' />
+            <!-- all your input fields here.... -->
+            <input class="form-control" type='text' name='name' placeholder="Имя" />
+            <input class="form-control" type='text' name='tel' placeholder="Телефон" />
+            <input class="form-control" type='submit' value='Отправить' />
+        </form>
+	</div>
+</div>
+
+
+
+
+
 								</div>
 							</div>
-							<!-- End Profile Tabs -->
+
 						</div>
 	                </div>
 
@@ -170,32 +231,8 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <nav class="pull-left">
-				<ul>
-					<li>
-						<a href="http://www.creative-tim.com">
-							Creative Tim
-						</a>
-					</li>
-					<li>
-						<a href="http://presentation.creative-tim.com">
-						   About Us
-						</a>
-					</li>
-					<li>
-						<a href="http://blog.creative-tim.com">
-						   Blog
-						</a>
-					</li>
-					<li>
-						<a href="http://www.creative-tim.com/license">
-							Licenses
-						</a>
-					</li>
-				</ul>
-            </nav>
             <div class="copyright pull-right">
-                &copy; 2016, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                &copy; 2017 - made with <i class="fa fa-heart heart"></i> by Mega Coders
             </div>
         </div>
     </footer>
@@ -203,17 +240,17 @@
 
 </body>
 	<!--   Core JS Files   -->
-	<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../assets/js/material.min.js"></script>
+	<script src="{{ site.baseurl }}/js/jquery.min.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/js/material.min.js"></script>
 
 	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/js/nouislider.min.js" type="text/javascript"></script>
 
 	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="../assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/js/bootstrap-datepicker.js" type="text/javascript"></script>
 
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="../assets/js/material-kit.js" type="text/javascript"></script>
+	<script src="{{ site.baseurl }}/js/material-kit.js" type="text/javascript"></script>
 
 </html>
