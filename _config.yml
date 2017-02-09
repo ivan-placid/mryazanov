@@ -1,5 +1,4 @@
 future: true 
 exclude: ['README.md']
 permalink: :categories/:title
-# permalink: pretty
 baseurl: /mryazanov
