@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: material
 title: Контакты | Максим Рязанов | Частный рекрутер
 ---
 <h1>Контакты</h1>
@@ -8,11 +8,15 @@ title: Контакты | Максим Рязанов | Частный рекр�
     <li>Email: my@mail.com</li>
 </ul>
 
-<form action="https://getsimpleform.com/messages?form_api_token=a48ffb4761dbcf0e703960e39986d600" method="post">
-  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='https://calledandrey.github.io/mryazanov/' />
-  <!-- all your input fields here.... -->
-  <input type='text' name='name' placeholder="Имя" />
-  <input type='text' name='tel' placeholder="Телефон" />
-  <input type='submit' value='Отправить' />
-</form>
+<div class="col-sm-4">
+	<div class="form-group">
+        <form action="https://getsimpleform.com/messages?form_api_token=a48ffb4761dbcf0e703960e39986d600" method="post">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <input type='hidden' name='redirect_to' value='https://calledandrey.github.io/mryazanov/' />
+            <!-- all your input fields here.... -->
+            <input class="form-control" type='text' name='name' placeholder="Имя" />
+            <input class="form-control" type='text' name='tel' placeholder="Телефон" />
+            <input class="form-control" type='submit' value='Отправить' />
+        </form>
+	</div>
+</div>
