@@ -1,7 +1,7 @@
 ---
 layout: default
 title: название вакансии
-category: ru
+category: vacancy
 published: true
 ---
 # Название вакансии
