@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: material
 title: Секретарь подразделения/Персональный ассистент
 category: vacancies
 published: true
 ---
+
 # Секретарь подразделения / Персональный ассистент 
 
 ## Требования
