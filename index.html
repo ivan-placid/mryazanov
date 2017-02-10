@@ -107,16 +107,32 @@ title: Максим Рязанов | Частный рекрутер
 <p>Выбирая работу с независимым хедхантером, Вы работаете с конкретным человеком, который заинтересован выполнять взятые на себя обязательства в максимально сжатые сроки, при этом который заботится о собственной репутации, так как имя не поменяешь в отличие от названия агентства.</p>
 
 
-<h2>Оставить заявку на сотрудничество</h2>
-<div class="col-sm-4">
-	<div class="form-group">
-        <form action="https://getsimpleform.com/messages?form_api_token=a48ffb4761dbcf0e703960e39986d600" method="post">
-            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-            <input type='hidden' name='redirect_to' value='https://calledandrey.github.io/mryazanov/' />
-            <!-- all your input fields here.... -->
-            <input class="form-control" type='text' name='name' placeholder="Имя" />
-            <input class="form-control" type='text' name='tel' placeholder="Телефон" />
-            <input class="form-control" type='submit' value='Отправить' />
-        </form>
-	</div>
+<h2>Оставить заявку на сотрудничество</h2><br>
+
+
+
+<div class="col-md-6">
+  <form role="form" id="contact-form" action="https://getsimpleform.com/messages?form_api_token=a48ffb4761dbcf0e703960e39986d600" method="post">
+  <!-- need to keep this absolute link up to date -->
+   <input type='hidden' name='redirect_to' value='https://calledandrey.github.io/mryazanov/thank-you' />
+    <div class="form-group label-floating">
+      <label class="control-label">Как к Вам обращаться</label>
+      <input type="text" name="name"  class="form-control">
+    </div>
+    <div class="form-group label-floating">
+      <label class="control-label">Email</label>
+      <input type="email" name="email" class="form-control"/>
+    </div>
+    <div class="form-group label-floating">
+      <label class="control-label">Ваш номер</label>
+      <input type="text" name="phone"  class="form-control"/>
+    </div>
+    <div class="form-group label-floating">
+      <label class="control-label">Ваши документы, пожалуйста!</label>
+      <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+    </div>
+    <div class="submit text-center">
+      <input type="submit" class="btn btn-primary btn-raised btn-round" value="Отправить" />
+    </div>
+  </form>
 </div>
