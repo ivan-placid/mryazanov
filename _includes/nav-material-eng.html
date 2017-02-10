@@ -13,12 +13,12 @@
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
-					<li>
+					<li class="{% if page.url == '/eng/' %}active{% endif %}">
     					<a href="{{ site.baseurl }}/eng">
     						Home
     					</a>
     				</li>
-    				<li>
+    				<li class="{% if page.url contains 'contacts' %}active{% endif %}">
 						<a href="{{ site.baseurl }}/eng/contacts">
 						    Contacts
 						</a>

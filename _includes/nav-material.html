@@ -13,22 +13,22 @@
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
-					<li>
+					<li class="{% if page.url == '/' %}active{% endif %}">
     					<a href="{{ site.baseurl }}/">
     						Работодателям
     					</a>
     				</li>
-					<li>
+					<li class="{% if page.url contains 'agencies' %}active{% endif %}">
     					<a href="{{ site.baseurl }}/agencies">
     						Агентствам
     					</a>
     				</li>
-                    <li>
+                    <li class="{% if page.url contains 'vacancies' %}active{% endif %}">
     					<a href="{{ site.baseurl }}/vacancies">
     						Вакансии
     					</a>
     				</li>
-    				<li>
+    				<li class="{% if page.url contains 'contacts' %}active{% endif %}">
 						<a href="{{ site.baseurl }}/contacts">
 						    Контакты
 						</a>
