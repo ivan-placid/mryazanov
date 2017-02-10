@@ -12,26 +12,3 @@ h1 {
 .navbar .navbar-brand {
   padding-top: 0px;
 }
-
-.profile-page .header {
-  height: 280px;
-}
-
- h1, .h1 {
-  font-size: 2em;
-  text-align: center;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  }
-
-h2 {
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 1.25em;
-  font-weight: 400;
-}
-  
